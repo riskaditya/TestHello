@@ -38,7 +38,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
-
+    //Trying branch in GitHub
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -344,6 +344,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+        }
+
+        protected void tryThis(){
+            System.out.println("Try This");
         }
     }
 }
